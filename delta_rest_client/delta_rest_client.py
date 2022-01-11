@@ -282,7 +282,6 @@ def cancel_order_format(order):
   }
   return order
 
-
 def round_by_tick_size(price, tick_size, floor_or_ceil=None):
   remainder = price % tick_size
   if remainder == 0:
