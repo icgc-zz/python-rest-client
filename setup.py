@@ -12,7 +12,8 @@ setuptools.setup(
     description="Rest Client for Delta Exchange",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/delta-exchange/python-rest-client",
+    url="https://github.com/icgc-zz/python-rest-client",
+    #url="https://github.com/delta-exchange/python-rest-client",
     packages=setuptools.find_packages(),
     classifiers=(
         "Programming Language :: Python :: 3",
@@ -20,3 +21,4 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ),
 )
+

@@ -2,11 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\delta_rest_client",
+    "\\delta_rest_client\\__pycache__",
     "\\env",
     "\\env\\Lib",
     "\\env\\Lib\\site-packages",
+    "\\env\\Lib\\site-packages\\delta_rest_client",
+    "\\env\\Lib\\site-packages\\delta_rest_client\\__pycache__",
     "\\env\\Lib\\site-packages\\setuptools"
   ],
-  "SelectedNode": "\\setup.py",
+  "SelectedNode": "\\Chris.py",
   "PreviewInSolutionExplorer": false
 }

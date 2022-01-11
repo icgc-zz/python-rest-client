@@ -187,6 +187,16 @@ class DeltaRestClient:
     response = self.request('DELETE', "/v2/orders", order, auth=True)
     return parseResponse(response)
 
+  def edit_order(self, product_id, order_id, limit_price, size):
+    order = {
+      'id': order_id,
+      'product_id': product_id,
+      'limit_price': limit_price,
+      'size': size
+    }
+    response = self.request('PUT', "/v2/orders", order, auth=True)
+    return parseResponse(response)
+
   def place_stop_order(self, product_id, size, side, stop_price=None, limit_price=None, trail_amount=None, order_type=OrderType.LIMIT, isTrailingStopLoss=False):
     order = {
       'product_id': product_id,
@@ -280,6 +290,15 @@ def cancel_order_format(order):
     'id': order['id'],
     'product_id': order['product_id']
   }
+  return order
+
+def edit_order_format(order):
+  order = {
+    'id': order['id'],
+    'product_id': order['product_id'],
+    'limit_price': order['limit_price'],
+    'size': order['size']
+ }
   return order
 
 def round_by_tick_size(price, tick_size, floor_or_ceil=None):
